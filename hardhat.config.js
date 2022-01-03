@@ -18,4 +18,10 @@ task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
  */
 module.exports = {
   solidity: "0.8.4",
+  networks: {
+    rinkeby: {
+      url: 'https://eth-rinkeby.alchemyapi.io/v2/hhFaKed2N92FhUeqktXcIMqPZHoxccRb',
+      accounts: ['efbc21b37fae89c30d4ea4e616d66554749921084ad8545c255f2925ee96a26c'],
+    },
+  },
 };
