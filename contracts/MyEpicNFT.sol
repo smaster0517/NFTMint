@@ -21,8 +21,8 @@ contract MyEpicNFT is ERC721URIStorage {
 
   // I create three arrays, each with their own theme of random words.
   // Pick some random funny words, names of anime characters, foods you like, whatever! 
-  string[] firstWords = ["Bmw", "Lamborgini", "Tesla", "RoseRoyce", "Toyota", "Porsche"];
   string[] secondWords = ["Pizza", "Snack", "Sawama", "Cake", "Pie", "Bread"];
+  string[] firstWords = ["Bmw", "Lamborgini", "Tesla", "RoseRoyce", "Toyota", "Porsche"];  
   string[] thirdWords = ["Apple", "Hp", "Dell", "Lenovo", "Alienware", "Msi"];
 
   // Get fancy with it! Declare a bunch of colors.
@@ -90,6 +90,7 @@ contract MyEpicNFT is ERC721URIStorage {
             )
         )
     );
+
 
     // Just like before, we prepend data:application/json;base64, to our data.
     string memory finalTokenUri = string(
